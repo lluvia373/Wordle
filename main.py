@@ -12,4 +12,4 @@ def get_answer():
     answer = random.choice(answer_list)
     return {"answer": answer}
 
-app.mount("/", StaticFiles(directory="wordle_package", html = True), name="static")
+app.mount("/", StaticFiles(directory="wordle_package", html = True), name="wordle")
